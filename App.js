@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
 
 export default function App() {
   return (
@@ -7,6 +7,10 @@ export default function App() {
       <Text style={styles.header}>Hiking App for the
       <Text style={styles.gays}> Gays </Text>
       only</Text>
+      <Image
+        style={styles.pattieGonia}
+        source={require('./assets/PattieGonia.webp')}>
+      </Image>
       <StatusBar style="auto" />
     </View>
   );
@@ -26,12 +30,16 @@ const styles = StyleSheet.create({
     color:'purple',
    
   },
-
   header:{
-    marginBottom:30,
-    padding: 50,
+    paddingTop: 60,
+    paddingBottom: 20,
     justifyContent:'space-around',
     flex: 1,
     fontSize: 20,
+  },
+  
+  pattieGonia:{
+    height: 800,
+    width: 400
   }
 });
