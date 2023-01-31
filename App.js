@@ -31,15 +31,16 @@ const styles = StyleSheet.create({
    
   },
   header:{
-    paddingTop: 60,
-    paddingBottom: 20,
+    paddingTop: 53,
+    paddingBottom: 30,
     justifyContent:'space-around',
     flex: 1,
     fontSize: 20,
   },
-  
+
   pattieGonia:{
     height: 800,
-    width: 400
+    width: 400,
+    marginBottom: 20
   }
 });
