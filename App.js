@@ -1,18 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import Homepage from './screens/homepage';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.header}>Hiking App for the
-      <Text style={styles.gays}> Gays </Text>
-      only</Text>
-      <Image
-        style={styles.pattieGonia}
-        source={require('./assets/PattieGonia.webp')}>
-      </Image>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+    <Homepage />
+    <StatusBar style="auto" />
+    </NavigationContainer>
   );
 }
 
