@@ -4,7 +4,9 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Hiking App for Gays Only</Text>
+      <Text>Hiking App for the
+      <Text style={styles.gays}> Gays </Text>
+      only</Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -17,4 +19,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+
+  gays:{
+    fontSize: 20,
+    fontWeight: 'bold',
+    color:'purple'
+  }
 });
